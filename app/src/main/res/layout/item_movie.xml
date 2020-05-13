@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="movie"
+            type="com.therealsanjeev.popularmoviestage2.models.Movie" />
+        <variable
+            name="presenter"
+            type="com.therealsanjeev.popularmoviestage2.Adapter.MovieAdapter.MovieAdapterViewHolder" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="6dp"
+        android:layout_margin="6dp"
+        app:cardElevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/movieItemParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> presenter.openMovieDetail(movie)}">
+
+            <ImageView
+                android:id="@+id/movieItemIv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/cd_movie_item"
+                android:scaleType="centerCrop"
+                android:transitionName="@string/movie_transition"
+                app:layout_constraintDimensionRatio="H,2:3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/movieTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/grid_info_height"
+                android:background="#88000000"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingEnd="@dimen/grid_right_padding"
+                android:paddingLeft="@dimen/grid_left_padding"
+                android:paddingRight="@dimen/grid_right_padding"
+                android:paddingStart="@dimen/grid_left_padding"
+                android:text="@{movie.movieTitle}"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/grid_info_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/favoriteIv"
+                android:layout_width="@dimen/grid_info_height"
+                android:layout_height="@dimen/grid_info_height"
+                android:contentDescription="@string/cd_favorite"
+                android:onClick="@{(view) -> presenter.onClickFavorite(view)}"
+                android:padding="@dimen/image_padding"
+                app:layout_constraintBottom_toBottomOf="@+id/movieTitleTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

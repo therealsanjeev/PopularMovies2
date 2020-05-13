@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PopularMovieStage2</string>
+
+    <!--Shared Preferences key-->
+    <string name="pref_sort_key" translatable="false">sort_order</string>
+    <string name="pref_changed_movie" translatable="false">changed_movie</string>
+
+    <!--Menu item name for sorting spinner-->
+    <string name="action_sort">Sorting</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+
+    <!--For Sort Labels-->
+    <string name="pref_sort_label_popular">Popular</string>
+    <string name="pref_sort_label_highest_rated">Top Rated</string>
+    <string name="pref_sort_label_favorite">Favorites</string>
+
+    <string name="cd_movie_item">Movie Poster</string>
+    <string name="cd_video">Video</string>
+    <string name="cd_favorite">Favorite</string>
+    <string name="cd_more">Expand More</string>
+    <string name="cd_status">Status</string>
+
+    <string name="language">en-US</string>
+
+    <!--For Detail Activity-->
+    <string name="release_date">Release Date:</string>
+    <string name="user_rating">Rating:</string>
+    <string name="user_rating_text" translatable="false">%1$s / 10</string>
+    <string name="plot_synopsis">Synopsis:</string>
+    <string name="videos">Videos</string>
+    <string name="reviews">Reviews</string>
+    <string name="review">Review</string>
+
+    <string name="no_internet">No internet connection, swipe to refresh</string>
+    <string name="no_favorite">To add a movie to favorites, tap Heart</string>
+    <string name="not_this_star">Not this heart. Tap heart on poster or detail page.</string>
+    <string name="no_app">There is not any sharing app installed on device</string>
+
+    <string name="view_more">READ MORE</string>
+
+    <string name="add_favorite">Added to favorites</string>
+    <string name="remove_favorite">Removed from favorites</string>
+
+    <string name="connection_error">Connection Error</string>
+
+
+
+    <string name="movie_transition" translatable="false">movie_transition</string>
+    <string name="review_transition" translatable="false">review_transition</string>
+    <string-array name="sort_spinner_list">
+        <item>@string/pref_sort_label_popular</item>
+        <item>@string/pref_sort_label_highest_rated</item>
+        <item>@string/pref_sort_label_favorite</item>
+    </string-array>
+</resources>

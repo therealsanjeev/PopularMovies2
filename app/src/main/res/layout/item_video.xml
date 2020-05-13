@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="video"
+            type="com.therealsanjeev.popularmoviestage2.models.Video" />
+
+        <variable
+            name="presenter"
+            type="com.therealsanjeev.popularmoviestage2.Adapter.VideoAdapter.VideoAdapterViewHolder" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/videoCardItem"
+        android:layout_width="@dimen/video_item_width"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> presenter.onClickVideo(video.videoUrl)}"
+        app:cardElevation="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/videoIv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_item_height"
+                android:contentDescription="@string/cd_video"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_name_height"
+                android:layout_below="@+id/videoIv"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/video_item_padding"
+                android:paddingRight="@dimen/video_item_padding"
+                android:text="@{video.videoName}"
+                android:textColor="@color/detailText"
+                android:textSize="@dimen/video_item_text_size" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
