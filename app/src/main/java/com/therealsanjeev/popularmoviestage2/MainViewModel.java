@@ -7,9 +7,9 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.therealsanjeev.popularmoviestage2.Data.AppDatabase;
-import com.therealsanjeev.popularmoviestage2.NetWork.MovieService;
-import com.therealsanjeev.popularmoviestage2.NetWork.RetrofitClient;
+import com.therealsanjeev.popularmoviestage2.data.AppDatabase;
+import com.therealsanjeev.popularmoviestage2.network.MovieService;
+import com.therealsanjeev.popularmoviestage2.network.RetrofitClient;
 import com.therealsanjeev.popularmoviestage2.models.ApiResponse;
 import com.therealsanjeev.popularmoviestage2.models.Movie;
 

@@ -1,4 +1,4 @@
-package com.therealsanjeev.popularmoviestage2.NetWork;
+package com.therealsanjeev.popularmoviestage2.network;
 
 import java.io.IOException;
 

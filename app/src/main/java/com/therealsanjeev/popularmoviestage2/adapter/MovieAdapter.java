@@ -1,4 +1,4 @@
-package com.therealsanjeev.popularmoviestage2.Adapter;
+package com.therealsanjeev.popularmoviestage2.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
-import com.therealsanjeev.popularmoviestage2.Data.AppDatabase;
-import com.therealsanjeev.popularmoviestage2.Data.AppPreference;
+import com.therealsanjeev.popularmoviestage2.data.AppDatabase;
+import com.therealsanjeev.popularmoviestage2.data.AppPreference;
 import com.therealsanjeev.popularmoviestage2.DetailActivity;
 import com.therealsanjeev.popularmoviestage2.MainActivity;
 import com.therealsanjeev.popularmoviestage2.R;

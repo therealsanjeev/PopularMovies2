@@ -18,8 +18,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.therealsanjeev.popularmoviestage2.Adapter.MovieAdapter;
-import com.therealsanjeev.popularmoviestage2.Data.AppPreference;
+import com.therealsanjeev.popularmoviestage2.adapter.MovieAdapter;
+import com.therealsanjeev.popularmoviestage2.data.AppPreference;
 import com.therealsanjeev.popularmoviestage2.databinding.ActivityMainBinding;
 import com.therealsanjeev.popularmoviestage2.models.Movie;
 import com.therealsanjeev.popularmoviestage2.utils.GridItemDecoration;

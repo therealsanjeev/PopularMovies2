@@ -10,7 +10,7 @@
 
         <variable
             name="presenter"
-            type="com.therealsanjeev.popularmoviestage2.Adapter.VideoAdapter.VideoAdapterViewHolder" />
+            type="com.therealsanjeev.popularmoviestage2.adapter.VideoAdapter.VideoAdapterViewHolder" />
 
     </data>
 

@@ -8,7 +8,7 @@
             type="com.therealsanjeev.popularmoviestage2.models.Movie" />
         <variable
             name="presenter"
-            type="com.therealsanjeev.popularmoviestage2.Adapter.MovieAdapter.MovieAdapterViewHolder" />
+            type="com.therealsanjeev.popularmoviestage2.adapter.MovieAdapter.MovieAdapterViewHolder" />
     </data>
 
     <androidx.cardview.widget.CardView

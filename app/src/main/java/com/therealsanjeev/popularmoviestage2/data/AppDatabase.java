@@ -1,4 +1,4 @@
-package com.therealsanjeev.popularmoviestage2.Data;
+package com.therealsanjeev.popularmoviestage2.data;
 
 import android.content.Context;
 

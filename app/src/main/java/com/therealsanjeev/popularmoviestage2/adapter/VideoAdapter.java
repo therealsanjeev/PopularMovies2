@@ -1,4 +1,4 @@
-package com.therealsanjeev.popularmoviestage2.Adapter;
+package com.therealsanjeev.popularmoviestage2.adapter;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
